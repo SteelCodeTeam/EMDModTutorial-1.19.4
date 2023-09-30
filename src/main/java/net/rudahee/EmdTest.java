@@ -13,6 +13,8 @@ import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.minecraftforge.registries.ForgeRegistries;
+import net.rudahee.modules.events.ModCreativeTabEvents;
+import net.rudahee.setup.Registration;
 import org.slf4j.Logger;
 
 // The value here should match an entry in the META-INF/mods.toml file
@@ -27,6 +29,12 @@ public class EmdTest {
 
         // Register the commonSetup method for modloading
         modEventBus.addListener(this::commonSetup);
+
+        // Agregamos el listener ANTES de los register(), justo debajo del resto de listeners.
+        modEventBus.addListener(ModCreativeTabEvents::addContentsToModTab);
+
+        //Debemos realizar esta llamada antes de la línea "MinecraftForge.EVENT_BUS.register(this)".
+        Registration.register(modEventBus);
 
         // Register ourselves for server and other game events we are interested in
         MinecraftForge.EVENT_BUS.register(this);
