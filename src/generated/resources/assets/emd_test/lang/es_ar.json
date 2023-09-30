@@ -1,0 +1,11 @@
+{
+  "block.emd_test.aluminum_block": "Bloque de aluminio",
+  "block.emd_test.aluminum_ore": "Mena de aluminio",
+  "block.emd_test.ettmetal_block": "Bloque de ettmetal",
+  "block.emd_test.ettmetal_ore": "Mena de ettmetal",
+  "item.emd_test.aluminum_ingot": "Lingote de aluminio",
+  "item.emd_test.aluminum_nugget": "Pepita de aluminio",
+  "item.emd_test.aluminum_raw": "Aluminio en crudo",
+  "item.emd_test.ettmetal": "Ettmetal",
+  "item.emd_test.ettmetal_nugget": "Pepita de ettmetal"
+}

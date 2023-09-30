@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "emd_test:ettmetal_block"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "item": "emd_test:ettmetal"
+  }
+}

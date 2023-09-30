@@ -1,0 +1,11 @@
+{
+  "block.emd_test.aluminum_block": "Block of Aluminum ",
+  "block.emd_test.aluminum_ore": "Aluminum ore",
+  "block.emd_test.ettmetal_block": "Block of Ettmetal",
+  "block.emd_test.ettmetal_ore": "Ettmetal ore",
+  "item.emd_test.aluminum_ingot": "Aluminum ingot",
+  "item.emd_test.aluminum_nugget": "Aluminum nugget",
+  "item.emd_test.aluminum_raw": "Raw of Aluminum",
+  "item.emd_test.ettmetal": "Ettmetal",
+  "item.emd_test.ettmetal_nugget": "Ettmetal nugget"
+}

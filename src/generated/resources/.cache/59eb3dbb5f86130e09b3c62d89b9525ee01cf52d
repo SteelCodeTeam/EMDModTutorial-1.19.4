@@ -1,0 +1,5 @@
+// 1.19.4	2023-09-30T09:48:14.087399	Loot Tables
+a0f76b5f52b56592c85b7515a177b41739ace0e7 data/emd_test/loot_tables/blocks/aluminum_block.json
+267954ad16680441d32f9275ce246287218229bb data/emd_test/loot_tables/blocks/aluminum_ore.json
+7108ca8b50be99f50ade76d84a373fde236b9d2b data/emd_test/loot_tables/blocks/ettmetal_block.json
+d007fb4ede6845c11d72e416755e19c8d61a0e27 data/emd_test/loot_tables/blocks/ettmetal_ore.json

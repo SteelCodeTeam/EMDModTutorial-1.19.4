@@ -1,0 +1,13 @@
+// 1.19.4	2023-09-30T09:48:14.0893971	Block States: emd_test
+4ff11798ff0d6a8e42b33c4583b6ef80546ca3b5 assets/emd_test/blockstates/aluminum_block.json
+07ac5ecfa33dd902f47e1f5de412a59399213824 assets/emd_test/blockstates/aluminum_ore.json
+2fc175f76438ce50d572e8b317765ff8faa60b23 assets/emd_test/blockstates/ettmetal_block.json
+1193c89f7b94f05c1036f34728d3a8a04ef5aa40 assets/emd_test/blockstates/ettmetal_ore.json
+8c2acb66fde51ddc4f95912950957712be3b0b07 assets/emd_test/models/block/aluminum_block.json
+43d69d13cef6ea72a659204c3b9b65ce075acc9f assets/emd_test/models/block/aluminum_ore.json
+e831437dd512bf1a765e721e8c668b6222c05dbf assets/emd_test/models/block/ettmetal_block.json
+215cad7c39729a95769f788040fa4a01724780eb assets/emd_test/models/block/ettmetal_ore.json
+9c57c625a4398adcbefbf47ede4ddceb594e2aa0 assets/emd_test/models/item/aluminum_block.json
+69d37bda85d01e4e8c748d017b118f1e052ac745 assets/emd_test/models/item/aluminum_ore.json
+57aa9673ec3f374b9811020f3955d0c26546d215 assets/emd_test/models/item/ettmetal_block.json
+0ec17abc2bbe887cf9509381d3ab8b8b4025d007 assets/emd_test/models/item/ettmetal_ore.json

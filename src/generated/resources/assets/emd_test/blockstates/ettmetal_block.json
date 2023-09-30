@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "emd_test:block/ettmetal_block"
+    }
+  }
+}
