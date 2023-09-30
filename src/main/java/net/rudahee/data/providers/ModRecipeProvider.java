@@ -75,7 +75,7 @@ public class ModRecipeProvider extends RecipeProvider {
                 .unlockedBy("has_item", has(ModItemsRegister.ALUMINUM_INGOT.get()))
                 .save(recipesConsumer, new ResourceLocation("aluminum_ingot_to_aluminum_nugget_recipe"));
 
-        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItemsRegister.ALUMINUM_INGOT.get(), 9)
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItemsRegister.ETTMETAL_NUGGET.get(), 9)
                 .requires(ModItemsRegister.ETTMETAL.get())
                 .unlockedBy("has_item", has(ModItemsRegister.ETTMETAL.get()))
                 .save(recipesConsumer, new ResourceLocation("ettmetal_ingot_to_ettmetal_nugget_recipe"));

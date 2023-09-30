@@ -1,5 +1,6 @@
 package net.rudahee.setup;
 
+import net.minecraft.core.HolderLookup;
 import net.minecraft.data.DataGenerator;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.loot.LootTableProvider;
@@ -13,6 +14,7 @@ import net.rudahee.data.providers.*;
 
 import java.util.Collections;
 import java.util.List;
+import java.util.concurrent.CompletableFuture;
 
 // Esta etiqueta es así debido a que es un evento, lo explicaré en el punto 5.
 @Mod.EventBusSubscriber(modid = EmdTest.MOD_ID, bus = Mod.EventBusSubscriber.Bus.MOD)
@@ -25,6 +27,7 @@ public class DataGeneration {
         DataGenerator gen = event.getGenerator();
         PackOutput packOutput = gen.getPackOutput();
         ExistingFileHelper existingFileHelper = event.getExistingFileHelper();
+        CompletableFuture<HolderLookup.Provider> lookupProvider = event.getLookupProvider();
 
         // Le pasamos los generadores al evento con el método DataGenerator#addProvider creando una nueva instancia del generador.
         gen.addProvider(event.includeServer(), new ModBlockStateProvider(packOutput, existingFileHelper));
@@ -32,6 +35,9 @@ public class DataGeneration {
         gen.addProvider(event.includeServer(), new ModRecipeProvider(gen));
         gen.addProvider(event.includeServer(), new LootTableProvider(packOutput, Collections.emptySet(),
                 List.of(new LootTableProvider.SubProviderEntry(ModLootTableSubProvider::new, LootContextParamSets.BLOCK))));
+
+        // Llamamos a nuestro provider para indicar los tags de los bloques.
+        gen.addProvider(event.includeServer(), new ModBlockTagProvider(packOutput,lookupProvider, existingFileHelper));
 
         // Agregamos un provider llamando a la misma clase para todas las variantes de español:
         // España, Argentina, Mexico, Uruguay, Venezuela y Chile.

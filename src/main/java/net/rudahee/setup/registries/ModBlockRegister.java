@@ -21,9 +21,9 @@ public class ModBlockRegister {
     // Debemos definir también la resistencia contra explosiones, si se pueden picar con cualquier herramienta y el tiempo que tardan en picarse.
 
     private static final BlockBehaviour.Properties COMMON_BLOCK_ORE_PROPERTIES
-            = BlockBehaviour.Properties.of(Material.STONE).explosionResistance(50).destroyTime(3).requiresCorrectToolForDrops().sound(SoundType.STONE);
+            = BlockBehaviour.Properties.of(Material.STONE).explosionResistance(15).destroyTime(2).requiresCorrectToolForDrops().sound(SoundType.STONE);
     private static final BlockBehaviour.Properties COMMON_BLOCK_METAL_PROPERTIES
-            = BlockBehaviour.Properties.of(Material.HEAVY_METAL).explosionResistance(50).destroyTime(3).requiresCorrectToolForDrops().sound(SoundType.METAL);
+            = BlockBehaviour.Properties.of(Material.HEAVY_METAL).explosionResistance(15).destroyTime(2).requiresCorrectToolForDrops().sound(SoundType.METAL);
 
     // Hacemos nuestros registros como hacíamos con los ítems, a través de los métodos auxiliares que encontramos abajo.
     public static RegistryObject<Block> ALUMINUM_ORE;

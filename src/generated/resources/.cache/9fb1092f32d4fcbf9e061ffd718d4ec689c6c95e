@@ -1,4 +1,4 @@
-// 1.19.4	2023-09-30T09:48:14.0919764	Recipes
+// 1.19.4	2023-09-30T15:05:25.9105984	Recipes
 00a8ad9c424777b058170fae34695eead16b52c8 data/minecraft/advancements/recipes/building_blocks/aluminum_ingot_to_aluminum_block.json
 7715183f50cc321f311ce177e01e699df6c1f325 data/minecraft/advancements/recipes/building_blocks/ettmetal_ingot_to_ettmetal_block.json
 5c5860f842bc23a0b32421fc74c20968051b4de0 data/minecraft/advancements/recipes/misc/aluminum_block_to_aluminum_ingot_recipe.json
@@ -17,5 +17,5 @@ dfaec0d8647dcaf3cccb13bf7b8c61a070b654e5 data/minecraft/recipes/blasting_aluminu
 6ec9120e4f0f6d1789c2dae0475b287fa8ad4e27 data/minecraft/recipes/cooking_aluminum_raw_to_ingot.json
 9dc49a6ad1cddbcb5aaad0f08ef36d4fcb2d0498 data/minecraft/recipes/ettmetal_block_to_ettmetal_ingot_recipe.json
 e16e07bf294423ff897736a1a8ef4f69af46b28a data/minecraft/recipes/ettmetal_ingot_to_ettmetal_block.json
-5cbce81f513f6456cfa20134d2ba6a023ec30dc7 data/minecraft/recipes/ettmetal_ingot_to_ettmetal_nugget_recipe.json
+0cf856a2ca617a16ce16bcd3b4c0028cf5fbc218 data/minecraft/recipes/ettmetal_ingot_to_ettmetal_nugget_recipe.json
 4dde35ba9a7907ecaf6493abb40ac9f346229e53 data/minecraft/recipes/ettmetal_nugget_to_ettmetal_ingot.json
