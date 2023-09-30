@@ -53,7 +53,7 @@ minecraft {
             property 'forge.enabledGameTestNamespaces', 'rudahee'
             
             mods {
-                emdtest {
+                emd_test {
                     source sourceSets.main
                 }
             }
@@ -69,7 +69,7 @@ minecraft {
                         property 'forge.enabledGameTestNamespaces', 'rudahee'
             
             mods {
-                emdtest {
+                emd_test {
                     source sourceSets.main
                 }
             }
@@ -88,7 +88,7 @@ minecraft {
             property 'forge.enabledGameTestNamespaces', 'rudahee'
 
             mods {
-                emdtest {
+                emd_test {
                     source sourceSets.main
                 }
             }
@@ -102,10 +102,10 @@ minecraft {
             property 'forge.logging.console.level', 'debug'
 
             // Specify the modid for data generation, where to output the resulting resource, and where to look for existing resources.
-            args '--mod', 'emdtest', '--all', '--output', file('src/generated/resources/'), '--existing', file('src/main/resources/')
+            args '--mod', 'emd_test', '--all', '--output', file('src/generated/resources/'), '--existing', file('src/main/resources/')
 
             mods {
-                emdtest {
+                emd_test {
                     source sourceSets.main
                 }
             }
@@ -149,12 +149,12 @@ dependencies {
 jar {
     manifest {
         attributes([
-                "Specification-Title": "emdtest",
-                            "Specification-Vendor": "RuDaHee",
+                "Specification-Title": "emd_test",
+                            "Specification-Vendor": "RuDaHee & SteelCodeTeam",
                             "Specification-Version": "1", // We are version 1 of ourselves
                 "Implementation-Title": project.name,
                 "Implementation-Version": project.jar.archiveVersion,
-                            "Implementation-Vendor": "RuDaHee",
+                            "Implementation-Vendor": "RuDaHee & SteelCodeTeam",
                             "Implementation-Timestamp": new Date().format("yyyy-MM-dd'T'HH:mm:ssZ")
         ])
     }
