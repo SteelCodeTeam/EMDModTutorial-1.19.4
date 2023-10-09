@@ -39,6 +39,8 @@ public class DataGeneration {
         // Llamamos a nuestro provider para indicar los tags de los bloques.
         gen.addProvider(event.includeServer(), new ModBlockTagProvider(packOutput,lookupProvider, existingFileHelper));
 
+        gen.addProvider(event.includeServer(), new ModWorldGenProvider(packOutput, lookupProvider));
+
         // Agregamos un provider llamando a la misma clase para todas las variantes de español:
         // España, Argentina, Mexico, Uruguay, Venezuela y Chile.
         gen.addProvider(event.includeServer(), new ModSpanishLanguageProvider(packOutput, "es_es"));

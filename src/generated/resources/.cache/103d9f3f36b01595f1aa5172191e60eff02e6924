@@ -1,0 +1,5 @@
+// 1.19.4	2023-10-09T21:33:49.3495837	Registries
+8ab7fff92457159784a352c8b1eeb2ce45172c46 data/emd_test/worldgen/configured_feature/aluminum_ore_stone_key.json
+6c6f3e109348f19fefc001b0301e55e784571d19 data/emd_test/worldgen/configured_feature/ettmetal_ore_deepslate_key.json
+8db64baa77557670dd21b2ccee4e37b2a3d30908 data/emd_test/worldgen/placed_feature/aluminum_placed_stone.json
+bf3468265a4950a6764f884e2a65719b4fcdad5f data/emd_test/worldgen/placed_feature/ettmetal_placed_deepslate.json

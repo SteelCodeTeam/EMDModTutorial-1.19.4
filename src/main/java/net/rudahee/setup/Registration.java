@@ -7,12 +7,14 @@ package net.rudahee.setup;
 
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
+import net.minecraftforge.event.RegisterCommandsEvent;
 import net.minecraftforge.eventbus.api.IEventBus;
+import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.rudahee.EmdTest;
-import net.rudahee.modules.events.ModCreativeTabEvents;
 import net.rudahee.setup.registries.ModBlockRegister;
+import net.rudahee.setup.registries.ModCommandsRegister;
 import net.rudahee.setup.registries.ModItemsRegister;
 
 public class Registration {
@@ -32,5 +34,10 @@ public class Registration {
 
         ModItemsRegister.register();
         ModBlockRegister.register();
+    }
+
+    @SubscribeEvent
+    public void onCommandsRegister(RegisterCommandsEvent event) {
+        ModCommandsRegister.register(event.getDispatcher());
     }
 }
